@@ -21,6 +21,10 @@ project "libpng"
 		"premake5.lua"
 	}
 
+	excludes {
+		"src/pngtest.c"
+	}
+
 	LIBPNG_INCLUDE_DIRS = { _SCRIPT_DIR .. "/include", _SCRIPT_DIR .. "/../zlib/include" }
 	LIBPNG_LINK_DIRS = { _SCRIPT_DIR .. "/bin/" }
 	LIBPNG_LINKS = { "libpng" }
