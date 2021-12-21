@@ -13,7 +13,7 @@ project "libpng"
 	architecture "x86_64"
 
 	includedirs { "include", "../zlib/include" }
-	defines { "NDEBUG", "PNG_SETJMP_NOT_SUPPORTED", "WIN32_LEAN_AND_MEAN" }
+	defines { "NDEBUG", "PNG_SETJMP_NOT_SUPPORTED", "WIN32_LEAN_AND_MEAN", "_CRT_SECURE_NO_WARNINGS" }
 
 	files {
 		"include/**",
